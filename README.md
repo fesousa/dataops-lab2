@@ -2,7 +2,7 @@
 
 ## DataOps - Lab2 - CloudFormation
 
-### Objetivos:
+### Objetivos
 
 * Utilizar CloudFormation para provisionar recursos na AWS
 * Criar um bucket S3 para armazenar arquivos
@@ -12,7 +12,7 @@
 
 ### Arquitetura da solução
 
-![Diagrama  lab 2](https://raw.github.com/fesousa/dataops-lab2/master/images/lab2.png)
+![Diagrama  lab 2](https://raw.github.com/fesousa/dataops-lab2/master/images/lab2.png =100x)
 
 
 
