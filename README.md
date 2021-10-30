@@ -29,14 +29,14 @@
 5.  Clique no segundo ícone <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img2.png" />  para adicionar uma nova pasta
 6.  Coloque o nome `lab2` e aperte `Enter`
 
-<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img3.png" height='170'/>
+<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img3.png"/>
 
-7.  Com a pasta selecionada, clique no primeiro ícone [<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img4.png" /> ] para adicionar um novo arquivo
+7.  Com a pasta selecionada, clique no primeiro ícone [ <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img4.png" /> ] para adicionar um novo arquivo
 8.  Coloque o nome `s3-notification.yaml` e aperte `Enter`. O Arquivo será aberto automaticamente no editor a direita
 
-<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img5.png" height='170'/>
+<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img5.png" />
 
-<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img6.png" height='170'/>
+<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img6.png" />
 
 
 
