@@ -9,10 +9,8 @@ jobs:
   embed-code:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-
-      - uses: tokusumi/markdown-embed-code@main
+      - name: Markdown Embed Code From File
+        uses: tokusumi/markdown-embed-code@v1.0.0
         with:
           markdown: "README.md"
           token: ${{ secrets.GITHUB_TOKEN }}
-          message: "synchronizing Readme"
