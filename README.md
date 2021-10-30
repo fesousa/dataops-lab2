@@ -4,11 +4,11 @@
 
 ### Objetivos
 
-* Utilizar CloudFormation para provisionar recursos na AWS
-* Criar um bucket S3 para armazenar arquivos
-* Criar um Tópico SNS para enviar mensagens
-* Criar uma assinatura de e-mail para o tópico SNS
-* Configurar S3 para enviar uma mensagem para SNS quando incluir ou excluir ar-quivo
+*  Utilizar CloudFormation para provisionar recursos na AWS
+*  Criar um bucket S3 para armazenar arquivos
+*  Criar um Tópico SNS para enviar mensagens
+*  Criar uma assinatura de e-mail para o tópico SNS
+*  Configurar S3 para enviar uma mensagem para SNS quando incluir ou excluir ar-quivo
 
 ### Arquitetura da solução
 
@@ -16,11 +16,17 @@
 
 ### Criar Template do CloudFormation
 
-1.	Abra o VSCode
-2.	Selecione o menu File --> Open Folder
-3.	Escolha uma pasta do computador para manter seus projetos e códigos
+1.  Abra o VSCode
+2.  Selecione o menu `File --> Open Folder`
+3.  Escolha uma pasta do computador para manter seus projetos e códigos
 
-<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img1.png" height='150'/>
+<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img1.png" height='170'/>
+
+4.  Nas opções da lateral esquerda, clique no nome da pasta que selecionou
+    a. No exemplo, foi selecionada a pasta `CODES`
+5.  Clique no segundo ícone (<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img2.png" />) para adicionar uma nova pasta
+6.  Coloque o nome `lab2` e aperte `Enter`
+
 
 ---
 
