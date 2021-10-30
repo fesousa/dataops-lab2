@@ -12,7 +12,7 @@
 
 ### Arquitetura da solução
 
-<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/lab2.png" height='320'/>
+<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/lab2.png" height='330'/>
 
 ### Criar Template do CloudFormation
 
@@ -20,7 +20,7 @@
 2.  Selecione o menu `File --> Open Folder`
 3.  Escolha uma pasta do computador para manter seus projetos e códigos
 
-<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img1.png" height='170'/>
+<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img1.png" />
 
 4.  Nas opções da lateral esquerda, clique no nome da pasta que selecionou
 
