@@ -45,7 +45,7 @@
     a. Troque `nomesobrenome` pelo seu nome e sobrenome.
     b. Não esqueça de salvar o arquivo.
 
-@[:code_block](https://raw.github.com/fesousa/dataops-lab2/master/s3.yaml)
+@[yaml](https://raw.github.com/fesousa/dataops-lab2/master/s3.yaml)
 
 
 
