@@ -1,0 +1,1 @@
+Buceket S3 + notificação SNS
