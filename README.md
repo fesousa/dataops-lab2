@@ -12,7 +12,7 @@
 
 ### Arquitetura da solução
 
-<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/lab2.png" height='400'/>
+<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/lab2.png" height='320'/>
 
 
 
