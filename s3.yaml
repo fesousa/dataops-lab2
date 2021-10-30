@@ -1,0 +1,34 @@
+# Versão do template - não alterar
+AWSTemplateFormatVersion: "2010-09-09"
+
+# Descrição que será utilizada na stack
+Description:
+  Criacao de bucket S3 e disparo de mensagem SNS
+
+# Parâmetros
+Parameters:
+  SufixoBucket:
+    Type: String
+    Default: nomesobrenome
+
+# Recursos que serão provisionados
+Resources:  
+  # Provisionar um Bucket S3 privado
+  S3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: Private
+      BucketName: !Sub dataops-deploy-${SufixoBucket}-${AWS::AccountId}-${AWS::Region}
+
+#Saídas mostradas no CloudFormation
+Outputs:
+  ArnBucket:
+    Description: Nome do bucket
+    Value: 
+      !Join
+        - ""
+        - - "arn:aws:s3:::"
+          - !Ref 'S3Bucket'
+  NomeBucket:
+    Description: Nome do bucket
+    Value: !Ref 'S3Bucket'
