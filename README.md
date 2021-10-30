@@ -1,17 +1,31 @@
 # Buceket S3 + notificação SNS
 
+## DataOps - Lab2 - CloudFormation
 
-## Configuração de acesso à AWS
+Objetivos:
+
+* Utilizar CloudFormation para provisionar recursos na AWS
+* Criar um bucket S3 para armazenar arquivos
+* Criar um Tópico SNS para enviar mensagens
+* Criar uma assinatura de e-mail para o tópico SNS
+* Configurar S3 para enviar uma mensagem para SNS quando incluir ou excluir ar-quivo
+
+
+
+
+## Implantação
+
+### Configuração de acesso à AWS
 
 ```console
 aws configure set aws_access_key_id "YOUR_AWS_ACCESS_KEY_ID"
 aws configure set aws_secret_access_key "YOUR_AWS_SECRET_ACCESS_KEY"
 aws configure set region "YOUR_REGION"
 #Se estiver utilizando SESSION TOKEN
-`aws configure set aws_session_token "YOUR_AWS_SESSION_TOKEN"`
+aws configure set aws_session_token "YOUR_AWS_SESSION_TOKEN"`
 ```
 
-## Deploy do template cloud-formation
+### Implantação do template CloudFormation
 
 Troque `nomesobrenome` por seu nomesobrenome, para criar um nome único para o bucket.
 
@@ -21,7 +35,7 @@ Troque `email@email.com` ppelo e-mail que vai receber a notificação SNS.
 aws cloudformation deploy --template-file s3-notification.yaml --stack-name s3-notification-stack --parameter-overrides SufixoBucket=nomedobrenome EmailNotificacao=email@email.com
 ```
 
-## Atualização template cloud-formation
+### Atualização template CloudFormation
 
 Troque `nomesobrenome` por seu nomesobrenome, para criar um nome único para o bucket.
 
