@@ -46,7 +46,7 @@
 
     b. Não esqueça de salvar o arquivo.
 
-```yml:s3.yaml
+```python:s3.yaml
  
 ```
 
