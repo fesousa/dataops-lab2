@@ -46,7 +46,7 @@
 
     b. Não esqueça de salvar o arquivo.
 
-<iframe src="https://raw.github.com/fesousa/dataops-lab2/master/s3.yaml"/>
+<iframe src="https://raw.github.com/fesousa/dataops-lab2/master/s3.yaml" ></iframe>
 
 
 
