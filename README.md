@@ -46,9 +46,17 @@
 
     b. Não esqueça de salvar o arquivo.
 
-```yaml
-# s3.yaml
-```
+<div id="code-element"></div>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+      axios({
+      method: 'get',
+      url: 'https://raw.github.com/fesousa/dataops-lab2/master/s3.yaml'
+       })
+      .then(function (response) {
+         document.getElementById("code-element").innerHTML = response.data;
+      });
+</script>
 
 
 
