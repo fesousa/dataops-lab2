@@ -46,9 +46,9 @@
 
     b. Não esqueça de salvar o arquivo.
 
-\```yml:s3.yaml
+```yml:s3.yaml
  
-\```
+```
 
 ---
 
