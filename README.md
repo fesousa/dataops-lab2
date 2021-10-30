@@ -14,6 +14,13 @@
 
 <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/lab2.png" height='320'/>
 
+### Criar Template do CloudFormation
+
+1.	Abra o VSCode
+2.	Selecione o menu File --> Open Folder
+3.	Escolha uma pasta do computador para manter seus projetos e códigos
+
+<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img1.png" height='250'/>
 
 
 ## Implantação
