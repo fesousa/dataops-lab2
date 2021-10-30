@@ -1,9 +1,9 @@
 name: Embed code in README
 
 on:
-  push:
+  pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   embed-code:
@@ -13,9 +13,17 @@ jobs:
         with:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
-          ref: master
-      - name: Markdown Embed Code From File
-        uses: tokusumi/markdown-embed-code@v1.0.0
+
+      - uses: tokusumi/markdown-embed-code@main
         with:
           markdown: "README.md"
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "Embedding code into Markdown" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.head_ref }}
