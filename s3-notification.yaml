@@ -35,7 +35,7 @@ Resources:
     Type: AWS::SNS::Subscription
     Properties:      
       Protocol: email
-      Endpoint: ${EmailNotificacao}
+      Endpoint: !Sub ${EmailNotificacao}
       TopicArn: !Ref 'SnsTopic'
 
   # Provisionar política do tópico - receber publicacao do S3

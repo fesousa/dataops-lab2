@@ -1,3 +1,4 @@
+# Atualização para incluir notificação de SNS no S3
 # Versão do template - não alterar
 AWSTemplateFormatVersion: "2010-09-09"
 
@@ -41,7 +42,7 @@ Resources:
     Type: AWS::SNS::Subscription
     Properties:      
       Protocol: email
-      Endpoint: ${EmailNotificacao}
+      Endpoint: !Sub ${EmailNotificacao}
       TopicArn: !Ref 'SnsTopic'
 
   # Provisionar política do tópico - receber publicacao do S3
