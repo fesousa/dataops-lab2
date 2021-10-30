@@ -12,7 +12,7 @@
 
 ### Arquitetura da solução
 
-![Diagrama  lab 2](https://raw.github.com/fesousa/dataops-lab2/master/images/lab2.png){ width=50% }
+![Diagrama  lab 2](https://raw.github.com/fesousa/dataops-lab2/master/images/lab2.png){:height:100px }
 
 
 
