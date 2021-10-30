@@ -23,7 +23,9 @@
 <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img1.png" height='170'/>
 
 4.  Nas opções da lateral esquerda, clique no nome da pasta que selecionou
+
     a. No exemplo, foi selecionada a pasta `CODES`
+    
 5.  Clique no segundo ícone <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img2.png" />  para adicionar uma nova pasta
 6.  Coloque o nome `lab2` e aperte `Enter`
 
