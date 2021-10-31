@@ -8,4 +8,5 @@ with open('README.md', 'r') as readme:
             content.replace(s, f.read())
     
 with open('README.md', 'w') as readme:
+    print(content)
     readme.write(content)
