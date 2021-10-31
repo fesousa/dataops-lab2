@@ -27,4 +27,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: python3 .github/workflows/readme_code.py
+        run: |          
+          python3 .github/workflows/readme_code.py
+          git add .
+          git commit -m 'alteração readme'
+          git pish origin master
