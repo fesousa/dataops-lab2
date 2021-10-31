@@ -17,6 +17,7 @@ jobs:
       - uses: tokusumi/markdown-embed-code@main
         with:
           markdown: "README.md"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Commit files
         run: |
           git config --local user.email "fernandosousa.ti@gmail.com"
