@@ -33,4 +33,4 @@ jobs:
           python3 .github/workflows/readme_code.py
           git add README.md
           git commit -m 'alteração readme'
-          git pish origin master
+          git push origin master
