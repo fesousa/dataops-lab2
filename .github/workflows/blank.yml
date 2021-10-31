@@ -29,6 +29,6 @@ jobs:
       - name: Run a one-line script
         run: |          
           python3 .github/workflows/readme_code.py
-          git add .
+          git add README.md
           git commit -m 'alteração readme'
           git pish origin master
