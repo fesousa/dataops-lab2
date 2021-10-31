@@ -1,5 +1,5 @@
 import re
-with open('README.md', 'r') as readme:
+with open('README.template.md', 'r') as readme:
     content = readme.read()
     subs = re.findall(r'```.*?\n(\$\{.*?\})\n```', content)
     for s in subs:
