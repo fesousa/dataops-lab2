@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: fsousa/fesousa/filecode-markdown@master
+      - uses: fsousa/filecode-markdown@master
         with:
           owner: fesousa
           repo: dataops-lab2
