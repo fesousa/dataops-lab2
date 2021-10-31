@@ -13,11 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Run a one-line script
-        run: |
-          git config --global user.email "fernandosousa.ti@gmail.com"
-          git config --global user.name "Fernando Sousa|Actions"          
-          python3 .github/workflows/readme_code.py
-          git add README.md
-          git commit -m 'alteração readme'
-          git push origin master
+      - uses: fsousa/fesousa/filecode-markdown@master
+        with:
+          owner: fesousa
+          repo: dataops-lab2
