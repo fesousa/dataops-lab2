@@ -47,54 +47,7 @@
     b. Não esqueça de salvar o arquivo.
 
 ```yaml
-# Versão do template - não alterar
-AWSTemplateFormatVersion: "2010-09-09"
-
-# Descrição que será utilizada na stack
-Description:
-  Criacao de bucket S3 e disparo de mensagem SNS
-
-# Parâmetros
-Parameters:
-  SufixoBucket:
-    Type: String
-    Default: nomesobrenome
-
-# Recursos que serão provisionados
-Resources:  
-  # Provisionar um Bucket S3 privado
-  S3Bucket:
-    Type: AWS::S3::Bucket
-    Properties:
-      AccessControl: Private
-      BucketName: !Sub dataops-deploy-${SufixoBucket}-${AWS::AccountId}-${AWS::Region}
-
-#Saídas mostradas no CloudFormation
-Outputs:
-  ArnBucket:
-    Description: Nome do bucket
-    Value: 
-      !Join
-        - ""
-        - - "arn:aws:s3:::"
-          - !Ref 'S3Bucket'
-  NomeBucket:
-    Description: Nome do bucket
-    Value: !Ref 'S3Bucket' 
-```
-
----
-
-## Implantação
-
-### Configuração de acesso à AWS
-
-```console
-aws configure set aws_access_key_id "YOUR_AWS_ACCESS_KEY_ID"
-aws configure set aws_secret_access_key "YOUR_AWS_SECRET_ACCESS_KEY"
-aws configure set region "YOUR_REGION"
-#Se estiver utilizando SESSION TOKEN
-aws configure set aws_session_token "YOUR_AWS_SESSION_TOKEN"`
+${s3.yaml}
 ```
 
 ### Implantação do template CloudFormation
