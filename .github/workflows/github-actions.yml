@@ -19,7 +19,7 @@ jobs:
           markdown: "README.md"
       - name: Commit files
         run: |
-          git config --local user.email "action@github.com"
+          git config --local user.email "fernandosousa.ti@gmail.com"
           git config --local user.name "GitHub Action"
           git commit -m "Embedding code into Markdown" -a
       - name: Push changes
