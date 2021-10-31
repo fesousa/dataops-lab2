@@ -27,7 +27,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: |          
+        run: |
+          git config --global user.email "fernandosousa.ti@gmail.com"
+          git config --global user.name "Fernando Sousa|Actions"          
           python3 .github/workflows/readme_code.py
           git add README.md
           git commit -m 'alteração readme'
