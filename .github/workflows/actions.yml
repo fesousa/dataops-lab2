@@ -17,3 +17,4 @@ jobs:
         with:
           owner: fesousa
           repo: dataops-lab2
+          access_token: ${{ secrets.GITHUB_TOKEN }}
