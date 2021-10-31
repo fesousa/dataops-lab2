@@ -6,8 +6,7 @@ with open('README.md', 'r') as readme:
         file = s[2:-1]
         print(file)
         with open(file) as f:
-            content.replace(s, f.read())
+            content = content.replace(s, f.read())
     
-with open('README.md', 'w') as readme:
-    print(content)
+with open('README.md', 'w') as readme:    
     readme.write(content)
