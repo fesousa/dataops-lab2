@@ -1,5 +1,5 @@
 import re
-with open('README.md', 'rw') as readme:
+with open('README.md', 'r') as readme:
     content = readme.read()
     subs = re.findall(r'```.*?\n(\$\{.*?\})\n```', content)
     for s in sub:
@@ -7,4 +7,5 @@ with open('README.md', 'rw') as readme:
         with open(file) as f:
             content.replace(s, f.read())
     
+with open('README.md', 'w') as readme:
     readme.write(content)
