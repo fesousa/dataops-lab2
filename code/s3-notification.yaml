@@ -64,9 +64,9 @@ Resources:
                     - - "arn:aws:s3:::"
                       - !Ref 'S3Bucket'
 
-##########
-# FIM DA ALTERAÇÃO
-##########
+  ##########
+  # FIM DA ALTERAÇÃO
+  ##########
 
 #Saídas mostradas no CloudFormation
 Outputs:

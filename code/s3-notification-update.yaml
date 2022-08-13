@@ -23,6 +23,10 @@ Resources:
     Properties:
       AccessControl: Private
       BucketName: !Sub dataops-deploy-${SufixoBucket}-${AWS::AccountId}-${AWS::Region}
+
+      ##########
+      # INICIO DA ALTERAÇÃO
+      ##########
       # Configuração de notificação
       NotificationConfiguration:
         TopicConfigurations:
@@ -30,6 +34,9 @@ Resources:
             Event: 's3:ObjectCreated:*'
           - Topic: !Ref 'SnsTopic'
             Event: 's3:ObjectRemoved:*'
+      ##########
+      # FIM DA ALTERAÇÃO
+      ##########
 
   # Provisionar Tópico SNS
   SnsTopic:

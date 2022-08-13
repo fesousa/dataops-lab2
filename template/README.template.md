@@ -126,6 +126,19 @@ a.	Atualize de vez em quando clicando em <img src="https://raw.github.com/fesous
 13.	Acesse seu e-mail para confirmar a assinatura do tópico 
 
 
+### Inclusão do evento no S3
+
+1. Volte para o VSCode e adicione no arquivo `s3-notification.yaml` a configuração do evento de inclusão e remoção de arquivos do S3 do recurso do bucket criado anteriormente. Adicione a propriedade `NotificationConfiguration` dentro de `Properties` no provisionamento do bucket S3, conforme o código abaixo O novo código está entre os comentários `INÍCIO DA ALTERAÇÃO` e `FIM DA ALTERAÇÃO`. Lembre-se de salvar o arquivo.
+
+```yaml
+${code/s3-notification-update.yaml}
+```
+
+2.	Atualize a stack da mesma forma que fez anteriormente
+
+3.	Faça um teste inserindo e removendo arquivos do bucket. Você deve receber as notificações
+
+
 
 ### Implantação do template CloudFormation
 
