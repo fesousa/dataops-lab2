@@ -1,4 +1,4 @@
-# CloudFormation: Buceket S3 + notificação SNS
+# CloudFormation: Bucket S3 + notificação SNS
 
 ## DataOps - Lab2 - CloudFormation
 
@@ -139,6 +139,11 @@ ${code/s3-notification-update.yaml}
 3.	Faça um teste inserindo e removendo arquivos do bucket. Você deve receber as notificações
 
 
+## Questionário sobre o Lab 2
+
+Responda ao questionário no sobre a realização deste laboratório.
+
+## Documentação extra para referência
 
 ### Implantação do template CloudFormation
 
