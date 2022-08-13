@@ -191,9 +191,9 @@ Resources:
                     - - "arn:aws:s3:::"
                       - !Ref 'S3Bucket'
 
-##########
-# FIM DA ALTERAÇÃO
-##########
+  ##########
+  # FIM DA ALTERAÇÃO
+  ##########
 
 #Saídas mostradas no CloudFormation
 Outputs:
@@ -238,6 +238,107 @@ a.	Atualize de vez em quando clicando em <img src="https://raw.github.com/fesous
 <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img28.png" />
  
 13.	Acesse seu e-mail para confirmar a assinatura do tópico 
+
+
+### Inclusão do evento no S3
+
+1. Volte para o VSCode e adicione no arquivo `s3-notification.yaml` a configuração do evento de inclusão e remoção de arquivos do S3 do recurso do bucket criado anteriormente. Adicione a propriedade `NotificationConfiguration` dentro de `Properties` no provisionamento do bucket S3, conforme o código abaixo O novo código está entre os comentários `INÍCIO DA ALTERAÇÃO` e `FIM DA ALTERAÇÃO`. Lembre-se de salvar o arquivo.
+
+```yaml
+# Atualização para incluir notificação de SNS no S3
+# Versão do template - não alterar
+AWSTemplateFormatVersion: "2010-09-09"
+
+# Descrição que será utilizada na stack
+Description:
+  Criacao de bucket S3 e disparo de mensagem SNS
+
+# Parâmetros
+Parameters:
+  SufixoBucket:
+    Type: String
+    Default: nomesobrenome
+  EmailNotificacao:
+    Type: String
+    Default: email@email.com
+
+# Recursos que serão provisionados
+Resources:  
+  # Provisionar um Bucket S3 privado
+  S3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: Private
+      BucketName: !Sub dataops-deploy-${SufixoBucket}-${AWS::AccountId}-${AWS::Region}
+
+      ##########
+      # INICIO DA ALTERAÇÃO
+      ##########
+      # Configuração de notificação
+      NotificationConfiguration:
+        TopicConfigurations:
+          - Topic: !Ref 'SnsTopic'
+            Event: 's3:ObjectCreated:*'
+          - Topic: !Ref 'SnsTopic'
+            Event: 's3:ObjectRemoved:*'
+      ##########
+      # FIM DA ALTERAÇÃO
+      ##########
+
+  # Provisionar Tópico SNS
+  SnsTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: Topico-Evento-Deploy-S3
+
+  # Provisionar assinatura do tópico
+  SNSSubscription:
+    Type: AWS::SNS::Subscription
+    Properties:      
+      Protocol: email
+      Endpoint: !Sub ${EmailNotificacao}
+      TopicArn: !Ref 'SnsTopic'
+
+  # Provisionar política do tópico - receber publicacao do S3
+  SNSTopicPolicy:
+    Type: AWS::SNS::TopicPolicy
+    Properties:
+      Topics:
+        - !Ref 'SnsTopic'
+      PolicyDocument: 
+        Id: TopicPolicyNotificationS3
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal: 
+              Service: s3.amazonaws.com
+            Action: sns:Publish
+            Resource: !Ref 'SnsTopic'
+            Condition:
+              ArnLike: 
+                aws:SourceArn: 
+                  !Join
+                    - ""
+                    - - "arn:aws:s3:::"
+                      - !Ref 'S3Bucket'
+
+#Saídas mostradas no CloudFormation
+Outputs:
+  ArnBucket:
+    Description: Nome do bucket
+    Value: 
+      !Join
+        - ""
+        - - "arn:aws:s3:::"
+          - !Ref 'S3Bucket'
+  NomeBucket:
+    Description: Nome do bucket
+    Value: !Ref 'S3Bucket'
+```
+
+2.	Atualize a stack da mesma forma que fez anteriormente
+
+3.	Faça um teste inserindo e removendo arquivos do bucket. Você deve receber as notificações
 
 
 
