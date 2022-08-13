@@ -83,6 +83,40 @@ Outputs:
     Value: !Ref 'S3Bucket'
 ```
 
+2.	Inicie seu ambiente da AWS no AWS Academy
+
+3.	Na barra superior procure por CloudFormation e selecione o serviço
+
+<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img7.png" />
+
+4.	Clique em  <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img8.png" />
+
+5.	Selecione a opção <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img9.png" />
+
+6.	Na tela de criação da Pilha:
+
+    a.	Selecione a opção <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img10.png" />
+
+    b.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img11.png" />
+
+    c.	 Escolha o arquivo `s3-notification.yaml` que acabou de criar
+
+    d.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img12.png" /> Se receber uma mensagem de erro, verifique se salvou o arquivo no VSCode
+
+    e.	 `Stack Name`: `dataops-lab2`
+
+    f.	 Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img13.png" /> nas próximas duas telas
+
+    g.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img14.png" />
+
+7.	Será mostrada a tela de execução da stack. Espere até o status mudar para <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img15.png" />
+
+a.	Atualize de vez em quando clicando em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img16.png" /> no canto superior direito
+
+8.	Quando a stack terminar a execução, acesse o S3 para verificar o bucket criado
+
+
+
 ### Implantação do template CloudFormation
 
 Troque `nomesobrenome` por seu nomesobrenome, para criar um nome único para o bucket.
