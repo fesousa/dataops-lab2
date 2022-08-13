@@ -117,7 +117,128 @@ Outputs:
 
 <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img17.png" />
 
+<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img18.png" />
+
+
+### Atualização do template e dos recursos
+
+1.	Volte para o VSCode e adicione no arquivo `s3-notification.yaml` o provisionamento do tópico SNS, assinatura do tópico e política do tópico SNS dentro da seção `Resources` do template. O novo código está entre os comentários `INÍCIO DA ALTERAÇÃO` e `FIM DA ALTERAÇÃO`. Troque o valor de `Endpoint` pelo seu e-mail para poder receber a notificação. Lembre-se de salvar o arquivo.
+
+```yaml
+
+# Versão do template - não alterar
+AWSTemplateFormatVersion: "2010-09-09"
+
+# Descrição que será utilizada na stack
+Description:
+  Criacao de bucket S3 e disparo de mensagem SNS
+
+# Parâmetros
+Parameters:
+  SufixoBucket:
+    Type: String
+    Default: nomesobrenome
+  EmailNotificacao:
+    Type: String
+    Default: email@email.com
+
+# Recursos que serão provisionados
+Resources:  
+  # Provisionar um Bucket S3 privado
+  S3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: Private
+      BucketName: !Sub dataops-deploy-${SufixoBucket}-${AWS::AccountId}-${AWS::Region}
+
+  ##########
+  # INÍCIO DA ALTERAÇÃO
+  ##########
+  # Provisionar Tópico SNS
+  SnsTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: Topico-Evento-Deploy-S3
+
+  # Provisionar assinatura do tópico
+  SNSSubscription:
+    Type: AWS::SNS::Subscription
+    Properties:      
+      Protocol: email
+      Endpoint: !Sub ${EmailNotificacao}
+      TopicArn: !Ref 'SnsTopic'
+
+  # Provisionar política do tópico - receber publicacao do S3
+  SNSTopicPolicy:
+    Type: AWS::SNS::TopicPolicy
+    Properties:
+      Topics:
+        - !Ref 'SnsTopic'
+      PolicyDocument: 
+        Id: TopicPolicyNotificationS3
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal: 
+              Service: s3.amazonaws.com
+            Action: sns:Publish
+            Resource: !Ref 'SnsTopic'
+            Condition:
+              ArnLike: 
+                aws:SourceArn: 
+                  !Join
+                    - ""
+                    - - "arn:aws:s3:::"
+                      - !Ref 'S3Bucket'
+
+##########
+# FIM DA ALTERAÇÃO
+##########
+
+#Saídas mostradas no CloudFormation
+Outputs:
+  ArnBucket:
+    Description: Nome do bucket
+    Value: 
+      !Join
+        - ""
+        - - "arn:aws:s3:::"
+          - !Ref 'S3Bucket'
+  NomeBucket:
+    Description: Nome do bucket
+    Value: !Ref 'S3Bucket'
+```
+
+2.	Volte para o console da AWS e acesse o serviço CloudFormation novamente
+
+3.	Selecione a stack criada anteriormente (`dataops-lab2`) clicando no radio button
+
 <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img19.png" />
+
+4.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img20.png" />
+
+5.	Selecione  <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img21.png" />
+
+6.	Selecione <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img22.png" />
+
+7.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img23.png" />
+
+8.	Escolha o arquivo `s3-notification.yaml` que acabou de alterar
+
+9.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img24.png" /> até o final
+
+10.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img25.png" />
+
+11.	Será mostrada a tela de execução da stack. Espere até o status mudar para <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img26.png" />
+
+a.	Atualize de vez em quando clicando em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img27.png" /> no canto superior direito
+
+12.	Quando a stack terminar a execução, acesse o SNS para verificar o tópico e a assinatura criadas
+
+<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img28.png" />
+ 
+13.	Acesse seu e-mail para confirmar a assinatura do tópico 
+
 
 
 ### Implantação do template CloudFormation
