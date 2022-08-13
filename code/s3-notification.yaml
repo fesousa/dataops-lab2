@@ -24,6 +24,9 @@ Resources:
       AccessControl: Private
       BucketName: !Sub dataops-deploy-${SufixoBucket}-${AWS::AccountId}-${AWS::Region}
 
+  ##########
+  # INÍCIO DA ALTERAÇÃO
+  ##########
   # Provisionar Tópico SNS
   SnsTopic:
     Type: AWS::SNS::Topic
@@ -60,6 +63,10 @@ Resources:
                     - ""
                     - - "arn:aws:s3:::"
                       - !Ref 'S3Bucket'
+
+##########
+# FIM DA ALTERAÇÃO
+##########
 
 #Saídas mostradas no CloudFormation
 Outputs:
