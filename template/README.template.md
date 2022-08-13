@@ -47,7 +47,7 @@
     b. Não esqueça de salvar o arquivo.
 
 ```yaml
-${s3.yaml}
+${code/s3.yaml}
 ```
 
 ### Implantação do template CloudFormation
