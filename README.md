@@ -101,7 +101,7 @@ Outputs:
 
     c.	 Escolha o arquivo `s3-notification.yaml` que acabou de criar
 
-    d.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img12.png" /> Se receber uma mensagem de erro, verifique se salvou o arquivo no VSCode
+    d.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img12.png" />. Se receber uma mensagem de erro, verifique se salvou o arquivo no VSCode
 
     e.	 `Stack Name`: `dataops-lab2`
 
@@ -111,10 +111,13 @@ Outputs:
 
 7.	Será mostrada a tela de execução da stack. Espere até o status mudar para <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img15.png" />
 
-a.	Atualize de vez em quando clicando em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img16.png" /> no canto superior direito
+    a.	Atualize de vez em quando clicando em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img16.png" /> no canto superior direito
 
 8.	Quando a stack terminar a execução, acesse o S3 para verificar o bucket criado
 
+<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img17.png" />
+
+<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img19.png" />
 
 
 ### Implantação do template CloudFormation
