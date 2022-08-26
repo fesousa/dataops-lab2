@@ -105,9 +105,11 @@ Outputs:
 
     e.	 `Stack Name`: `dataops-lab2`
 
-    f.	 Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img13.png" /> nas próximas duas telas
+    f. Na seção `Parâmetros`, coloque o seu nome e sobrenome no campo `SufixoBucket`, onde está com o valor `nomesobrenome`. Por exemplo: `fernandosousa`. Este parâmetro será utilizado no nome do bucket
 
-    g.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img14.png" />
+    g.	 Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img13.png" /> nas próximas duas telas
+
+    h.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img14.png" />
 
 7.	Será mostrada a tela de execução da stack. Espere até o status mudar para <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img15.png" />
 
@@ -138,9 +140,16 @@ Parameters:
   SufixoBucket:
     Type: String
     Default: nomesobrenome
+
+  ##########
+  # INÍCIO DA ALTERAÇÃO
+  ##########
   EmailNotificacao:
     Type: String
     Default: email@email.com
+  ##########
+  # FIM DA ALTERAÇÃO
+  ##########
 
 # Recursos que serão provisionados
 Resources:  
@@ -225,19 +234,24 @@ Outputs:
 
 8.	Escolha o arquivo `s3-notification.yaml` que acabou de alterar
 
-9.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img24.png" /> até o final
+9. Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img24.png" />
 
-10.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img25.png" />
+10. Na seção `Parâmetros`, coloque o e-mail que quer receber as notificaçõs no parâmetro `EmailNotificacao`.
 
-11.	Será mostrada a tela de execução da stack. Espere até o status mudar para <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img26.png" />
+11.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img24.png" /> até o final
+
+12.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img25.png" />
+
+13.	Será mostrada a tela de execução da stack. Espere até o status mudar para <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img26.png" />
 
 a.	Atualize de vez em quando clicando em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img27.png" /> no canto superior direito
 
-12.	Quando a stack terminar a execução, acesse o SNS para verificar o tópico e a assinatura criadas
+14.	Quando a stack terminar a execução, acesse o SNS para verificar o tópico e a assinatura criadas
 
 <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img28.png" />
  
-13.	Acesse seu e-mail para confirmar a assinatura do tópico 
+15.	Acesse seu e-mail para confirmar a assinatura do tópico 
+
 
 
 ### Inclusão do evento no S3
