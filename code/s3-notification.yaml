@@ -11,9 +11,16 @@ Parameters:
   SufixoBucket:
     Type: String
     Default: nomesobrenome
+
+  ##########
+  # INÍCIO DA ALTERAÇÃO
+  ##########
   EmailNotificacao:
     Type: String
     Default: email@email.com
+  ##########
+  # FIM DA ALTERAÇÃO
+  ##########
 
 # Recursos que serão provisionados
 Resources:  
