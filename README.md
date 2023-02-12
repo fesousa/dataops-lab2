@@ -109,7 +109,7 @@ Outputs:
 
     g.	 Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img13.png" /> nas próximas duas telas
 
-    h.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img14.png" />
+    h.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img14.png" height='35' />
 
 7.	Será mostrada a tela de execução da stack. Espere até o status mudar para <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img15.png" />
 
@@ -240,7 +240,7 @@ Outputs:
 
 11.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img24.png" /> até o final
 
-12.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img14.png" />
+12.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img14.png" height='35' />
 
 13.	Será mostrada a tela de execução da stack. Espere até o status mudar para <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img26.png" />
 
@@ -386,5 +386,5 @@ aws cloudformation deploy --template-file s3-notification-update.yaml --stack-na
     &copy; 2023 Fernando Sousa
     <br/>
     
-Last update: 2023-02-12 17:58:09
+Last update: 2023-02-12 18:00:05
 </div>
