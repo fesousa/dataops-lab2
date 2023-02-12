@@ -76,7 +76,7 @@ ${code/s3.yaml}
 
     g.	 Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img13.png" /> nas próximas duas telas
 
-    h.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img14.png" />
+    h.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img14.png" height='35' />
 
 7.	Será mostrada a tela de execução da stack. Espere até o status mudar para <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img15.png" />
 
@@ -119,7 +119,7 @@ ${code/s3-notification.yaml}
 
 11.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img24.png" /> até o final
 
-12.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img14.png" />
+12.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img14.png" height='35' />
 
 13.	Será mostrada a tela de execução da stack. Espere até o status mudar para <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img26.png" />
 
