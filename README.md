@@ -12,7 +12,7 @@
 
 ### Arquitetura da solução
 
-<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/lab2.png" height='330'/>
+<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/lab2.png" width='100%'/>
 
 ### Criar Template do CloudFormation
 
@@ -87,7 +87,7 @@ Outputs:
 
 3.	Na barra superior procure por CloudFormation e selecione o serviço
 
-<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img7.png" />
+<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img7.png" width='100%' />
 
 4.	Clique em  <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img8.png" />
 
@@ -117,9 +117,9 @@ Outputs:
 
 8.	Quando a stack terminar a execução, acesse o S3 para verificar o bucket criado
 
-<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img17.png" />
+<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img17.png" width='100%' />
 
-<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img18.png" />
+<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img18.png" width='100%' />
 
 
 ### Atualização do template e dos recursos
@@ -222,7 +222,7 @@ Outputs:
 
 3.	Selecione a stack criada anteriormente (`dataops-lab2`) clicando no radio button
 
-<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img19.png" />
+<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img19.png" width='100%'/>
 
 4.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img20.png" />
 
@@ -240,15 +240,15 @@ Outputs:
 
 11.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img24.png" /> até o final
 
-12.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img25.png" />
+12.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img14.png" />
 
 13.	Será mostrada a tela de execução da stack. Espere até o status mudar para <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img26.png" />
 
-a.	Atualize de vez em quando clicando em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img27.png" /> no canto superior direito
+    a.	Atualize de vez em quando clicando em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img27.png" /> no canto superior direito
 
 14.	Quando a stack terminar a execução, acesse o SNS para verificar o tópico e a assinatura criadas
 
-<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img28.png" />
+<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img28.png" width='100%' />
  
 15.	Acesse seu e-mail para confirmar a assinatura do tópico 
 
@@ -375,8 +375,16 @@ aws cloudformation deploy --template-file s3-notification.yaml --stack-name s3-n
 
 Troque `nomesobrenome` por seu nomesobrenome, para criar um nome único para o bucket.
 
-Troque `email@email.com` ppelo e-mail que vai receber a notificação SNS.
+Troque `email@email.com` pelo e-mail que vai receber a notificação SNS.
 
 ```console
 aws cloudformation deploy --template-file s3-notification-update.yaml --stack-name s3-notification-stack --parameter-overrides SufixoBucket=nomesobrenome EmailNotificacao=email@email.com`
 ```
+
+
+<div class="footer">
+    &copy; 2023 Fernando Sousa
+    <br/>
+    
+Last update: 2023-02-12 17:58:09
+</div>
