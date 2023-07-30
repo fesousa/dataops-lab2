@@ -224,11 +224,11 @@ Outputs:
 
 <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img19.png" width='100%'/>
 
-4.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img20.png"  width='100%'/>
+4.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img20.png" />
 
-5.	Selecione  <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img21.png" height='25'  />
+5.	Selecione  <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img21.png" height='30'  />
 
-6.	Selecione <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img22.png" height='25'  />
+6.	Selecione <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img22.png" height='30'  />
 
 7.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img23.png" />
 
@@ -386,5 +386,5 @@ aws cloudformation deploy --template-file s3-notification-update.yaml --stack-na
     &copy; 2023 Fernando Sousa
     <br/>
     
-Last update: 2023-07-30 19:37:45
+Last update: 2023-07-30 19:39:35
 </div>
