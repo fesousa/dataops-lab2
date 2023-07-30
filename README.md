@@ -386,5 +386,5 @@ aws cloudformation deploy --template-file s3-notification-update.yaml --stack-na
     &copy; 2023 Fernando Sousa
     <br/>
     
-Last update: 2023-07-30 19:30:58
+Last update: 2023-07-30 19:34:57
 </div>
