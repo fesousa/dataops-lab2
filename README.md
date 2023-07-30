@@ -99,13 +99,17 @@ Outputs:
 
     b.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img11.png" />
 
-    c.	 Escolha o arquivo `s3-notification.yaml` que acabou de criar
+    c.	 Escolha o arquivo `s3.yaml` que acabou de criar
 
     d.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img12.png" />. Se receber uma mensagem de erro, verifique se salvou o arquivo no VSCode
 
-    e.	 `Stack Name`: `dataops-lab2`
+    e.	 `Nome da pilha`: `dataops-lab2`
 
-    f. Na seção `Parâmetros`, coloque o seu nome e sobrenome no campo `SufixoBucket`, onde está com o valor `nomesobrenome`. Por exemplo: `fernandosousa`. Este parâmetro será utilizado no nome do bucket
+    f. Na seção `Parâmetros`:
+
+        * coloque o seu nome e sobrenome no campo `SufixoBucket`, onde está com o valor `nomesobrenome`. Por exemplo: `fernandosousa`. Este parâmetro será utilizado no nome do bucket
+
+        * coloque o seu email no campo `EmailNotificacao`, onde está com o valor `email@email.com`. Este parâmetro será utilizado para configurar o SNS
 
     g.	 Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img13.png" /> nas próximas duas telas
 
@@ -386,5 +390,5 @@ aws cloudformation deploy --template-file s3-notification-update.yaml --stack-na
     &copy; 2023 Fernando Sousa
     <br/>
     
-Last update: 2023-02-12 18:01:34
+Last update: 2023-07-30 19:28:40
 </div>
