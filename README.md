@@ -105,9 +105,7 @@ Outputs:
 
     e.	 `Nome da pilha`: `dataops-lab2`
 
-    f. Na seção `Parâmetros`:
-
-        * coloque o seu nome e sobrenome no campo `SufixoBucket`, onde está com o valor `nomesobrenome`. Por exemplo: `fernandosousa`. Este parâmetro será utilizado no nome do bucket
+    f. Na seção `Parâmetros` coloque o seu nome e sobrenome no campo `SufixoBucket`, onde está com o valor `nomesobrenome`. Por exemplo: `fernandosousa`. Este parâmetro será utilizado no nome do bucket
 
     g.	 Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img13.png" /> nas próximas duas telas
 
@@ -388,5 +386,5 @@ aws cloudformation deploy --template-file s3-notification-update.yaml --stack-na
     &copy; 2023 Fernando Sousa
     <br/>
     
-Last update: 2023-07-30 19:29:37
+Last update: 2023-07-30 19:30:58
 </div>
