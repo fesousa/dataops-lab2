@@ -14,6 +14,18 @@
 
 <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/lab2.png" width='100%'/>
 
+### Criar Ambiente de Desenvolvimento no Cloud9
+
+1. No ambiente da AWS, procure e abra o serviço Cloud9
+2. Clique no botão <img height="25" src="https://raw.github.com/fesousa/dataops-lab2/master/images/img29.png" />  
+3. No campo `Nome` escreva `ambiente-dev-dataops`
+3. Em `Tempo limite`, coloque `4 horas`
+4. Em `Configurações de rede` selecione a opção `Secure Shell (SSH)` 
+
+<img height="80" src="https://raw.github.com/fesousa/dataops-lab2/master/images/img31.png" />  
+
+5. Clique em <img height="25" src="https://raw.github.com/fesousa/dataops-lab2/master/images/img30.png" />  
+
 ### Criar Template do CloudFormation
 
 1.  Abra o VSCode
@@ -386,5 +398,5 @@ aws cloudformation deploy --template-file s3-notification-update.yaml --stack-na
     &copy; 2023 Fernando Sousa
     <br/>
     
-Last update: 2023-07-30 19:39:35
+Last update: 2023-08-05 18:17:27
 </div>
