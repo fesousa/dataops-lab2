@@ -28,6 +28,10 @@
 
 <img width="100%" src="https://raw.github.com/fesousa/dataops-lab2/master/images/img32.png" />  
 
+5. Na tela da imagem anterior selecione o ambiente criado e clique em  <img height="25" src="https://raw.github.com/fesousa/dataops-lab2/master/images/img34.png" />  
+
+<img width="100%" src="https://raw.github.com/fesousa/dataops-lab2/master/images/img33.png" />  
+
 ### Criar Template do CloudFormation
 
 1.  Abra o VSCode
