@@ -119,11 +119,11 @@ ${code/s3-notification.yaml}
 
 9.	Escolha o arquivo `s3-notification.yaml` que acabou de alterar
 
-10. Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img24.png" />
+10. Clique em <img height='25' src="https://raw.github.com/fesousa/dataops-lab2/master/images/img24.png" />
 
 11. Na seção `Parameters`, coloque o e-mail que quer receber as notificaçõs no parâmetro `EmailNotificacao`.
 
-12.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img24.png" /> até o final
+12.	Clique em <img height='25' src="https://raw.github.com/fesousa/dataops-lab2/master/images/img24.png" /> até o final
 
 13.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img14.png" height='25' />
 
