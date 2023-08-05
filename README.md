@@ -38,23 +38,14 @@
 2.  Na seção do lado esquerdo do ambiente, clique com o botão direito do mouse na pasta principal do ambiente (`ambiente-dev-dataops`) e depois em `New Folder`
 3. Coloque o nome `lab2` na pasta
 
-<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img1.png" />
+<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img1.1.png" />
 
-4.  Nas opções da lateral esquerda, clique no nome da pasta que selecionou
+4.  Adicione um novo arquivo clicando em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img2.1.png" /> e depois em `New File`
 
-    a. No exemplo, foi selecionada a pasta `CODES`
+5. Salve o arquivo com o nome `s3-notification.yaml` na pasta `lab2` apertando as teclas `ctrl` e `s` juntas. Ao abrir a janela de salvar, lembre-se de selecionar a pasta `lab2`
 
-5.  Clique no segundo ícone <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img2.png" />  para adicionar uma nova pasta
-6.  Coloque o nome `lab2` e aperte `Enter`
+<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img5.1.png" />
 
-<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img3.png"/>
-
-7.  Com a pasta selecionada, clique no primeiro ícone [ <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img4.png" /> ] para adicionar um novo arquivo
-8.  Coloque o nome `s3-notification.yaml` e aperte `Enter`. O Arquivo será aberto automaticamente no editor a direita
-
-<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img5.png" />
-
-<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img6.png" />
 
 ### Provisionar Bucket S3
 
@@ -404,5 +395,5 @@ aws cloudformation deploy --template-file s3-notification-update.yaml --stack-na
     &copy; 2023 Fernando Sousa
     <br/>
     
-Last update: 2023-08-05 18:29:47
+Last update: 2023-08-05 20:00:07
 </div>
