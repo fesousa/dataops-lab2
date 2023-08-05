@@ -34,9 +34,9 @@
 
 ### Criar Template do CloudFormation
 
-1.  Abra o VSCode
-2.  Selecione o menu `File --> Open Folder`
-3.  Escolha uma pasta do computador para manter seus projetos e códigos
+1.  Abra o Cloud9, se ainda não estiver aberto
+2.  Na seção do lado esquerdo do ambiente, clique com o botão direito do mouse na pasta principal do ambiente (`ambiente-dev-dataops`) e depois em `New Folder`
+3. Coloque o nome `lab2` na pasta
 
 <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img1.png" />
 
