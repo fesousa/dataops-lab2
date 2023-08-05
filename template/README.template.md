@@ -44,7 +44,7 @@
 
 5. Salve o arquivo com o nome `s3-notification.yaml` na pasta `lab2` apertando as teclas `ctrl` e `s` juntas. Ao abrir a janela de salvar, lembre-se de selecionar a pasta `lab2`
 
-<img height="300" src="https://raw.github.com/fesousa/dataops-lab2/master/images/img5.1.png" />
+<img height="400" src="https://raw.github.com/fesousa/dataops-lab2/master/images/img5.1.png" />
 
 
 ### Provisionar Bucket S3
@@ -56,13 +56,9 @@ Não esqueça de salvar o arquivo.
 ${code/s3.yaml}
 ```
 
-2.	Inicie seu ambiente da AWS no AWS Academy
+2.	Na AWS procure por CloudFormation e selecione o serviço
 
-3.	Na barra superior procure por CloudFormation e selecione o serviço
-
-<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img7.png" width='100%' />
-
-4.	Clique em  <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img8.png" />
+3.	Clique em  <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img8.png" />
 
 5.	Selecione a opção <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img9.png" />
 
@@ -70,19 +66,21 @@ ${code/s3.yaml}
 
     a.	Selecione a opção <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img10.png" />
 
-    b.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img11.png" />
+    b. Faça o download do arquivo `s3-notification.yaml` do Cloud9 (clique com o botão direito no arquivo e escolha `Download`)
 
-    c.	 Escolha o arquivo `s3.yaml` que acabou de criar
+    c.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img11.png" />    
+    
+    d.  Escolha o arquivo `s3-notification.yaml` que acabou de baixar
 
-    d.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img12.png" />. Se receber uma mensagem de erro, verifique se salvou o arquivo no VSCode
+    e.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img12.png" />. Se receber uma mensagem de erro, verifique se salvou o arquivo.
 
-    e.	 `Nome da pilha`: `dataops-lab2`
+    f. Na próxima tela, em  `Stack name` coloque `dataops-lab2`
 
-    f. Na seção `Parâmetros` coloque o seu nome e sobrenome no campo `SufixoBucket`, onde está com o valor `nomesobrenome`. Por exemplo: `fernandosousa`. Este parâmetro será utilizado no nome do bucket
+    g. Na seção `Parameters` coloque o seu nome e sobrenome no campo `SufixoBucket`, onde está com o valor `nomesobrenome`. Por exemplo: `fernandosousa`. Este parâmetro será utilizado no nome do bucket
 
-    g.	 Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img13.png" /> nas próximas duas telas
+    h.	 Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img13.png" /> nas próximas duas telas
 
-    h.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img14.png" height='25' />
+    i.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img14.png" height='25' />
 
 7.	Será mostrada a tela de execução da stack. Espere até o status mudar para <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img15.png" />
 
@@ -97,7 +95,7 @@ ${code/s3.yaml}
 
 ### Atualização do template e dos recursos
 
-1.	Volte para o VSCode e adicione no arquivo `s3-notification.yaml` o provisionamento do tópico SNS, assinatura do tópico e política do tópico SNS dentro da seção `Resources` do template. O novo código está entre os comentários `INÍCIO DA ALTERAÇÃO` e `FIM DA ALTERAÇÃO`. Troque o valor de `Endpoint` pelo seu e-mail para poder receber a notificação. Lembre-se de salvar o arquivo.
+1.	Volte para o Cloud9 e adicione no arquivo `s3-notification.yaml` o provisionamento do tópico SNS, assinatura do tópico e política do tópico SNS dentro da seção `Resources` do template. O novo código está entre os comentários `INÍCIO DA ALTERAÇÃO` e `FIM DA ALTERAÇÃO`. Troque o valor de `Endpoint` pelo seu e-mail para poder receber a notificação. Lembre-se de salvar o arquivo.
 
 ```yaml
 ${code/s3-notification.yaml}
@@ -115,27 +113,29 @@ ${code/s3-notification.yaml}
 
 6.	Selecione <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img22.png" height='30'  />
 
-7.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img23.png" />
+7. Faça o download no arquivo `s3-notification.yaml` do Cloud9 novamente
 
-8.	Escolha o arquivo `s3-notification.yaml` que acabou de alterar
+8.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img23.png" />
 
-9. Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img24.png" />
+9.	Escolha o arquivo `s3-notification.yaml` que acabou de alterar
 
-10. Na seção `Parâmetros`, coloque o e-mail que quer receber as notificaçõs no parâmetro `EmailNotificacao`.
+10. Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img24.png" />
 
-11.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img24.png" /> até o final
+11. Na seção `Parameters`, coloque o e-mail que quer receber as notificaçõs no parâmetro `EmailNotificacao`.
 
-12.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img14.png" height='25' />
+12.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img24.png" /> até o final
 
-13.	Será mostrada a tela de execução da stack. Espere até o status mudar para <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img26.png" />
+13.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img14.png" height='25' />
+
+14.	Será mostrada a tela de execução da stack. Espere até o status mudar para <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img26.png" />
 
     a.	Atualize de vez em quando clicando em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img27.png" /> no canto superior direito
 
-14.	Quando a stack terminar a execução, acesse o SNS para verificar o tópico e a assinatura criadas
+15.	Quando a stack terminar a execução, acesse o SNS para verificar o tópico e a assinatura criadas
 
 <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img28.png" width='100%' />
  
-15.	Acesse seu e-mail para confirmar a assinatura do tópico 
+16.	Acesse seu e-mail para confirmar a assinatura do tópico 
 
 
 
