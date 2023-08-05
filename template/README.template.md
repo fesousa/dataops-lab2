@@ -24,7 +24,9 @@
 
 <img height="80" src="https://raw.github.com/fesousa/dataops-lab2/master/images/img31.png" />  
 
-5. Clique em <img height="25" src="https://raw.github.com/fesousa/dataops-lab2/master/images/img30.png" />  
+5. Clique em <img height="25" src="https://raw.github.com/fesousa/dataops-lab2/master/images/img30.png" />  . O resultado deve ser o seguinte:
+
+<img width="100%" src="https://raw.github.com/fesousa/dataops-lab2/master/images/img32.png" />  
 
 ### Criar Template do CloudFormation
 
