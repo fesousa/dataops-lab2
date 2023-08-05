@@ -49,11 +49,8 @@
 
 ### Provisionar Bucket S3
 
-1.  No arquivo `s3-notification.yaml` coloque o seguinte código para configurar o template do CloudFormation e provisionar um Bucket S3. O Código está no arquivo `s3.yaml` neste repositório.
-
-    a. Troque `nomesobrenome` pelo seu nome e sobrenome.
-
-    b. Não esqueça de salvar o arquivo.
+1.  No arquivo `s3-notification.yaml` coloque o seguinte código para configurar o template do CloudFormation e provisionar um Bucket S3. código também está [neste arquivo](https://github.com/fesousa/dataops-lab2/blob/master/code/s3.yaml).
+Não esqueça de salvar o arquivo.
 
 ```yaml
 ${code/s3.yaml}
