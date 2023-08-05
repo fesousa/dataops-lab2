@@ -28,7 +28,7 @@
 
 <img width="100%" src="https://raw.github.com/fesousa/dataops-lab2/master/images/img32.png" />  
 
-5. Na tela da imagem anterior selecione o ambiente criado e clique em  <img height="25" src="https://raw.github.com/fesousa/dataops-lab2/master/images/img34.png" />  
+5. Na tela da imagem anterior selecione o ambiente criado e clique em  <img height="25" src="https://raw.github.com/fesousa/dataops-lab2/master/images/img34.png" />. O ambiente de desenvolvimento do Cloud9 será aberto em uma nova aba
 
 <img width="100%" src="https://raw.github.com/fesousa/dataops-lab2/master/images/img33.png" />  
 
