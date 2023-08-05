@@ -91,33 +91,33 @@ Outputs:
 
 2.	Na AWS procure por CloudFormation e selecione o serviço
 
-3.	Clique em  <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img8.png" />
+3.	Clique em  <img height='25' src="https://raw.github.com/fesousa/dataops-lab2/master/images/img8.png" />
 
-5.	Selecione a opção <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img9.png" />
+5.	Selecione a opção <img height='25' src="https://raw.github.com/fesousa/dataops-lab2/master/images/img9.png" />
 
 6.	Na tela de criação da Pilha:
 
-    a.	Selecione a opção <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img10.png" />
+    a.	Selecione a opção <img height='25' src="https://raw.github.com/fesousa/dataops-lab2/master/images/img10.png" />
 
     b. Faça o download do arquivo `s3-notification.yaml` do Cloud9 (clique com o botão direito no arquivo e escolha `Download`)
 
-    c.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img11.png" />    
+    c.	Clique em <img height='25' src="https://raw.github.com/fesousa/dataops-lab2/master/images/img11.png" />    
     
     d.  Escolha o arquivo `s3-notification.yaml` que acabou de baixar
 
-    e.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img12.png" />. Se receber uma mensagem de erro, verifique se salvou o arquivo.
+    e.	Clique em <img height='25' src="https://raw.github.com/fesousa/dataops-lab2/master/images/img12.png" />. Se receber uma mensagem de erro, verifique se salvou o arquivo.
 
     f. Na próxima tela, em  `Stack name` coloque `dataops-lab2`
 
     g. Na seção `Parameters` coloque o seu nome e sobrenome no campo `SufixoBucket`, onde está com o valor `nomesobrenome`. Por exemplo: `fernandosousa`. Este parâmetro será utilizado no nome do bucket
 
-    h.	 Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img13.png" /> nas próximas duas telas
+    h.	 Clique em <img height='25' src="https://raw.github.com/fesousa/dataops-lab2/master/images/img13.png" /> nas próximas duas telas
 
     i.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img14.png" height='25' />
 
 7.	Será mostrada a tela de execução da stack. Espere até o status mudar para <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img15.png" />
 
-    a.	Atualize de vez em quando clicando em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img16.png" /> no canto superior direito
+    a.	Atualize de vez em quando clicando em <img height='25' src="https://raw.github.com/fesousa/dataops-lab2/master/images/img16.png" /> no canto superior direito
 
 8.	Quando a stack terminar a execução, acesse o S3 para verificar o bucket criado
 
@@ -228,15 +228,15 @@ Outputs:
 
 <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img19.png" width='100%'/>
 
-4.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img20.png" />
+4.	Clique em <img height='25' src="https://raw.github.com/fesousa/dataops-lab2/master/images/img20.png" />
 
-5.	Selecione  <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img21.png" height='30'  />
+5.	Selecione  <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img21.png" height='25'  />
 
-6.	Selecione <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img22.png" height='30'  />
+6.	Selecione <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img22.png" height='25'  />
 
 7. Faça o download no arquivo `s3-notification.yaml` do Cloud9 novamente
 
-8.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img23.png" />
+8.	Clique em <img height='25' src="https://raw.github.com/fesousa/dataops-lab2/master/images/img11.png" />
 
 9.	Escolha o arquivo `s3-notification.yaml` que acabou de alterar
 
@@ -392,5 +392,5 @@ aws cloudformation deploy --template-file s3-notification-update.yaml --stack-na
     &copy; 2023 Fernando Sousa
     <br/>
     
-Last update: 2023-08-05 20:40:58
+Last update: 2023-08-05 20:44:44
 </div>
