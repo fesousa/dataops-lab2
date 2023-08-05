@@ -38,7 +38,7 @@
 2.  Na seção do lado esquerdo do ambiente, clique com o botão direito do mouse na pasta principal do ambiente (`ambiente-dev-dataops`) e depois em `New Folder`
 3. Coloque o nome `lab2` na pasta
 
-<img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img1.1.png" />
+<img height="80" src="https://raw.github.com/fesousa/dataops-lab2/master/images/img1.1.png" />
 
 4.  Adicione um novo arquivo clicando em <img src="https://raw.github.com/fesousa/dataops-lab2/master/images/img2.1.png" /> e depois em `New File`
 
